@@ -17,10 +17,12 @@ from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
 from useapi import views
+from chartapi import views as chartViews
 
 router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
 router.register(r'groups', views.GroupViewSet)
+router.register(r'charts', chartViews.ChartViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
