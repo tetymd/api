@@ -22,7 +22,7 @@ from chartapi import views as chartViews
 router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
 router.register(r'groups', views.GroupViewSet)
-router.register(r'charts', chartViews.ChartViewSet)
+router.register(r'9432', chartViews.Stock_9432ViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
